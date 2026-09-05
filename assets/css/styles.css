@@ -5,22 +5,63 @@
 @media (max-width:1050px){.home-hero{grid-template-columns:1fr;min-height:0}.hero-art{height:420px}.featured-grid{grid-template-columns:1fr 1fr}.featured-grid .project-card:last-child{grid-column:1/-1}.proof-strip{grid-template-columns:1fr 1fr;gap:12px}.proof-strip .metric-card{border-radius:18px!important}.case-impact-grid{grid-template-columns:1fr 1fr}.approach-cards{grid-template-columns:1fr 1fr}.approach-cards article:last-child{grid-column:1/-1}.about-hero{grid-template-columns:1fr}.profile-placeholder{justify-self:start}.resume-content{grid-template-columns:1fr}.resume-sidebar{display:grid;grid-template-columns:1fr 1fr}.contact-hero{grid-template-columns:1fr}.section-heading{grid-template-columns:1fr;gap:24px}.approach-band,.values-band{grid-template-columns:1fr}.cta-band{grid-template-columns:1fr}.cta-actions{justify-content:flex-start}}
 @media (max-width:760px){h1{font-size:clamp(2.8rem,13vw,4.3rem)}h2{font-size:2.4rem}.nav-shell{min-height:66px;padding:0 20px}.menu-button{display:block}.site-nav{position:absolute;top:66px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);display:none;flex-direction:column;align-items:stretch;padding:14px 20px 24px;gap:0}.site-nav.open{display:flex}.nav-link{padding:15px 0;font-size:1rem}.nav-link:after{bottom:8px;width:35px}.home-hero{padding:70px 20px 55px}.hero-art{height:340px}.hero-monogram{width:210px;height:210px}.hero-monogram span{font-size:4.7rem}.orbit-one{width:275px;height:275px}.orbit-two{width:330px;height:330px}.hero-tag{font-size:.65rem;padding:7px 10px}.tag-one{top:38px}.tag-two{bottom:65px}.tag-three{bottom:20px}.proof-strip{padding:0 20px;margin-bottom:65px;grid-template-columns:1fr}.section-shell{padding:70px 20px}.featured-grid,.work-grid,.impact-grid,.scope-grid{grid-template-columns:1fr}.project-visual{height:255px}.project-visual-large{height:420px;padding:24px;border-radius:20px}.comp-grid{grid-template-columns:1fr 1fr}.comp-grid>span:nth-child(3),.comp-grid>span:nth-child(4){display:none}.approach-band,.values-band,.cta-band,.case-impact{margin-left:14px;margin-right:14px;border-radius:24px;padding:45px 28px}.cta-actions{flex-direction:column;align-items:flex-start}.footer-shell{flex-direction:column}.footer-links{flex-wrap:wrap}.page-hero,.case-hero{padding:78px 20px 50px}.case-visual-wrap{padding:0 14px 55px}.case-content{padding:0 20px 70px}.case-section{grid-template-columns:1fr;gap:12px;padding:50px 0}.case-impact-grid{grid-template-columns:1fr}.tools-section{padding:40px 20px 65px}.next-project{margin:0 20px 70px;padding:40px 0;align-items:flex-start;flex-direction:column}.approach-cards{grid-template-columns:1fr}.approach-cards article:last-child{grid-column:auto}.resume-hero{display:block}.resume-actions{margin-top:30px}.resume-sidebar{display:block}.resume-sidebar>div{margin-bottom:35px}.timeline{padding-left:28px}.timeline-marker{left:-35px}.timeline-head{display:block}.timeline-head span{display:block;margin-top:7px}.contact-hero{padding:90px 20px 60px}.contact-row{grid-template-columns:75px 1fr 20px}.contact-row.pending{grid-template-columns:75px 1fr}.flow-row{gap:4px}.flow-row span{padding:10px 5px;font-size:.58rem}.flow-row i{width:10px}.placeholder-note{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}[data-reveal]{opacity:1;transform:none}}
-.hero-headshot {
-  width: 330px;
-  height: 400px;
-  object-fit: cover;
-  object-position: center center;
-  border-radius: 32px;
-  box-shadow: 0 45px 90px rgba(16,42,67,.24);
-  position: relative;
-  z-index: 2;
-  border: 1px solid rgba(255,255,255,.65);
-}
 
-@media (max-width: 760px) {
-  .hero-headshot {
-    width: 250px;
-    height: 305px;
-    border-radius: 26px;
-  }
+
+/* ===== Portfolio launch polish =====
+   The image filename below is intentionally stable. To change headshots later,
+   replace /assets/images/stevie-jordan-headshot.jpg and no layout edits are needed. */
+.home-hero{
+  min-height:650px;
+  padding:88px 28px 70px;
+  grid-template-columns:1.08fr .92fr;
+  gap:48px;
+}
+.home-hero h1{font-size:clamp(3rem,5.6vw,5.75rem)}
+.hero-art{height:460px}
+.hero-headshot{
+  width:320px;
+  height:320px;
+  aspect-ratio:1/1;
+  display:block;
+  object-fit:cover;
+  object-position:50% 36%;
+  border-radius:50%;
+  border:6px solid rgba(255,255,255,.96);
+  box-shadow:0 34px 75px rgba(16,42,67,.22);
+  position:relative;
+  z-index:2;
+  background:#d8e5f2;
+}
+.profile-ring{
+  width:300px;
+  height:300px;
+  aspect-ratio:1/1;
+  margin:auto;
+  border-radius:50%;
+  overflow:hidden;
+  border:6px solid rgba(255,255,255,.96);
+  background:#d8e5f2;
+  box-shadow:0 34px 75px rgba(16,42,67,.18);
+  display:block;
+}
+.profile-photo{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:50% 36%;
+}
+.profile-placeholder p{display:none}
+.placeholder-note{display:none!important}
+
+@media (max-width:1050px){
+  .home-hero{grid-template-columns:1fr;min-height:0;padding-top:82px}
+  .hero-art{height:410px}
+}
+@media (max-width:760px){
+  .home-hero{padding:62px 20px 50px}
+  .home-hero h1{font-size:clamp(2.8rem,13vw,4.3rem)}
+  .hero-art{height:330px}
+  .hero-headshot{width:230px;height:230px;border-width:5px}
+  .profile-ring{width:240px;height:240px;border-width:5px}
 }
