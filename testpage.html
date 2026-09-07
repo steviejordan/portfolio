@@ -56,15 +56,54 @@
 
 <style>
 
-body[data-page="resume"] .credential-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+/* =========================================================
+   MATCH HOMEPAGE HEADER SIZE
+   ========================================================= */
+
+body[data-page="resume"] .nav-shell {
+  min-height: 60px;
 }
 
-body[data-page="resume"] .credential-link::after {
-  content: "↗";
-  font-size: .8em;
+body[data-page="resume"] .nav-link {
+  padding: 18px 0;
+}
+
+body[data-page="resume"] .nav-link::after {
+  bottom: 10px;
+}
+
+body[data-page="resume"] .wordmark-name {
+  font-size: 1rem;
+}
+
+
+/* =========================================================
+   CREDENTIALS
+   ========================================================= */
+
+body[data-page="resume"] .credential-item {
+  margin-bottom: 22px;
+}
+
+body[data-page="resume"] .credential-name {
+  display: block;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+body[data-page="resume"] .credential-verify {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--blue);
+  font-size: .82rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+body[data-page="resume"] .credential-verify:hover {
+  color: var(--blue2);
 }
 
 </style>
@@ -217,43 +256,56 @@ body[data-page="resume"] .credential-link::after {
           Credentials
         </div>
 
-        <ul>
 
-          <li>
+        <div class="credential-item">
 
-            <a
-              class="credential-link"
-              href="https://www.credly.com/earner/earned/badge/b6b51cd6-92cb-4a65-9d5e-f8d09d4d60ac"
-              target="_blank"
-              rel="noopener"
-            >
-              <b>SHRM-SCP</b>
-            </a>
+          <span class="credential-name">
+            SHRM Senior Certified Professional (SHRM-SCP)
+          </span>
 
-          </li>
+          <a
+            class="credential-verify"
+            href="https://www.credly.com/earner/earned/badge/b6b51cd6-92cb-4a65-9d5e-f8d09d4d60ac"
+            target="_blank"
+            rel="noopener"
+          >
+            Verify credential ↗
+          </a>
+
+        </div>
 
 
-          <li>
+        <div class="credential-item">
+
+          <span class="credential-name">
+            Google Data Analytics Professional Certificate
+          </span>
+
+          <a
+            class="credential-verify"
+            href="https://www.credly.com/earner/earned/badge/211a3f95-02bc-414c-9d5b-35dff65b2a70"
+            target="_blank"
+            rel="noopener"
+          >
+            Verify credential ↗
+          </a>
+
+        </div>
+
+
+        <div class="credential-item">
+
+          <span class="credential-name">
             BS, Human Resources Management
+          </span>
+
+          <span>
+            University of Mount Olive
             <br>
-            University of Mount Olive · Magna Cum Laude
-          </li>
+            Magna Cum Laude
+          </span>
 
-
-          <li>
-
-            <a
-              class="credential-link"
-              href="https://www.credly.com/earner/earned/badge/211a3f95-02bc-414c-9d5b-35dff65b2a70"
-              target="_blank"
-              rel="noopener"
-            >
-              Google Data Analytics Professional Certificate
-            </a>
-
-          </li>
-
-        </ul>
+        </div>
 
       </div>
 
