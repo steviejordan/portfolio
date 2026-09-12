@@ -114,10 +114,7 @@
    ========================================================= */
 
 
-/* ---------------------------------------------------------
-   COMPACT NAVIGATION
-   Use this same treatment across all case-study pages.
-   --------------------------------------------------------- */
+/* COMPACT NAVIGATION */
 
 body[data-page="work"] .nav-shell {
   min-height: 60px;
@@ -136,9 +133,9 @@ body[data-page="work"] .wordmark-name {
 }
 
 
-/* ---------------------------------------------------------
-   COMPACT CASE-STUDY HERO
-   --------------------------------------------------------- */
+/* =========================================================
+   COMPACT HERO
+   ========================================================= */
 
 body[data-page="work"] .comp-case-hero {
   max-width: 1040px;
@@ -170,9 +167,9 @@ body[data-page="work"] .comp-case-hero .back-link {
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    STORY CONTENT
-   --------------------------------------------------------- */
+   ========================================================= */
 
 body[data-page="work"] .comp-case-content {
   padding-top: 42px;
@@ -202,14 +199,14 @@ body[data-page="work"] .comp-case-content .action-list li {
 }
 
 
-/* ---------------------------------------------------------
-   WORK SAMPLE
-   --------------------------------------------------------- */
+/* =========================================================
+   WORK SAMPLE GUIDE
+   ========================================================= */
 
 body[data-page="work"] .work-samples-section {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 78px 28px 96px;
+  padding: 78px 28px 58px;
 }
 
 body[data-page="work"] .work-samples-heading {
@@ -233,7 +230,6 @@ body[data-page="work"] .sample-card {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 14px 40px rgba(16,42,67,.06);
-  margin-bottom: 28px;
 }
 
 body[data-page="work"] .sample-copy {
@@ -268,8 +264,7 @@ body[data-page="work"] .sample-image-link {
 }
 
 body[data-page="work"] .sample-image-wrap {
-  padding: 24px;
-  overflow-x: auto;
+  padding: 22px;
 }
 
 body[data-page="work"] .sample-image {
@@ -289,48 +284,104 @@ body[data-page="work"] .sample-enlarge {
 }
 
 
-/* ---------------------------------------------------------
-   INTERACTIVE DEMO
-   --------------------------------------------------------- */
+/* =========================================================
+   LIVE EXCEL DEMO
+   ========================================================= */
 
-body[data-page="work"] .demo-card {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 34px;
-  align-items: center;
-  padding: 34px 36px;
-  background: var(--dark);
-  color: #fff;
-  border-radius: 24px;
-  margin-top: 30px;
+body[data-page="work"] .excel-demo-section {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 38px 28px 96px;
 }
 
-body[data-page="work"] .demo-card h3 {
-  font-size: clamp(1.6rem, 2.8vw, 2.35rem);
-  margin-bottom: 10px;
+body[data-page="work"] .excel-demo-heading {
+  max-width: 850px;
+  margin-bottom: 28px;
 }
 
-body[data-page="work"] .demo-card p {
-  color: #d9e2ec;
-  max-width: 760px;
-  margin: 0;
+body[data-page="work"] .excel-demo-heading h2 {
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+}
+
+body[data-page="work"] .excel-demo-heading p {
+  max-width: 790px;
+  margin-top: 18px;
   line-height: 1.65;
 }
 
-body[data-page="work"] .demo-card .eyebrow {
-  color: #8fd4ff;
+body[data-page="work"] .excel-demo-shell {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(16,42,67,.08);
 }
 
-body[data-page="work"] .demo-actions {
+body[data-page="work"] .excel-demo-topbar {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+body[data-page="work"] .excel-demo-topbar strong {
+  display: block;
+  font-size: .95rem;
+}
+
+body[data-page="work"] .excel-demo-topbar span {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+body[data-page="work"] .excel-live-badge {
+  flex: 0 0 auto;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: #dff4ee;
+  color: #176347;
+  font-size: .7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+body[data-page="work"] .excel-embed-wrap {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  background: #fff;
+}
+
+body[data-page="work"] .excel-embed {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+body[data-page="work"] .excel-demo-note {
+  padding: 16px 24px 20px;
+  border-top: 1px solid var(--line);
+  background: #f7f9fb;
+  color: var(--muted);
+  font-size: .8rem;
+  line-height: 1.55;
+}
+
+body[data-page="work"] .excel-demo-note strong {
+  color: var(--ink);
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    IMPACT
-   --------------------------------------------------------- */
+   ========================================================= */
 
 body[data-page="work"] .comp-impact {
   margin-top: 0;
@@ -363,9 +414,9 @@ body[data-page="work"] .impact-narrative p {
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    TOOLS
-   --------------------------------------------------------- */
+   ========================================================= */
 
 body[data-page="work"] .comp-tools {
   padding-top: 72px;
@@ -373,9 +424,9 @@ body[data-page="work"] .comp-tools {
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    RESPONSIVE
-   --------------------------------------------------------- */
+   ========================================================= */
 
 @media (max-width: 900px) {
 
@@ -385,11 +436,10 @@ body[data-page="work"] .comp-tools {
 
   body[data-page="work"] .work-samples-section {
     padding-top: 58px;
-    padding-bottom: 72px;
   }
 
-  body[data-page="work"] .demo-card {
-    grid-template-columns: 1fr;
+  body[data-page="work"] .excel-embed-wrap {
+    height: 620px;
   }
 
 }
@@ -410,11 +460,20 @@ body[data-page="work"] .comp-tools {
   }
 
   body[data-page="work"] .sample-image-wrap {
-    padding: 14px;
+    padding: 12px;
   }
 
-  body[data-page="work"] .demo-card {
-    padding: 28px 24px;
+  body[data-page="work"] .excel-demo-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  body[data-page="work"] .excel-embed-wrap {
+    height: 540px;
+  }
+
+  body[data-page="work"] .excel-demo-topbar {
+    align-items: flex-start;
   }
 
 }
@@ -554,14 +613,11 @@ body[data-page="work"] .comp-tools {
   <div class="case-main">
 
 
-    <!-- CHALLENGE -->
-
     <section class="case-section">
 
       <div class="section-number">
         01
       </div>
-
 
       <div>
 
@@ -595,14 +651,11 @@ body[data-page="work"] .comp-tools {
 
 
 
-    <!-- MY ROLE -->
-
     <section class="case-section">
 
       <div class="section-number">
         02
       </div>
-
 
       <div>
 
@@ -648,14 +701,11 @@ body[data-page="work"] .comp-tools {
 
 
 
-    <!-- SOLUTION -->
-
     <section class="case-section">
 
       <div class="section-number">
         03
       </div>
-
 
       <div>
 
@@ -694,7 +744,7 @@ body[data-page="work"] .comp-tools {
 
 
 <!-- =======================================================
-     SELECTED WORK SAMPLE
+     GUIDE / WORK SAMPLE
      ======================================================= -->
 
 <section class="work-samples-section">
@@ -710,14 +760,12 @@ body[data-page="work"] .comp-tools {
     </div>
 
     <h2>
-      See how the planning tool worked.
+      How to explore the planning tool.
     </h2>
 
     <p>
-      This scrubbed demonstration uses fictitious employee and
-      compensation data to show the planning experience,
-      calculation logic, editable leader fields, and budget
-      controls without exposing company information.
+      This guide explains the core features of the sanitized
+      demonstration before you try the workbook yourself.
     </p>
 
   </div>
@@ -736,16 +784,14 @@ body[data-page="work"] .comp-tools {
       </div>
 
       <h3>
-        Compensation Planning Decision Tool
+        Compensation Planning Tool Guide
       </h3>
 
       <p>
-        Yellow fields represent leader inputs. Protected and
-        calculated fields preserve the underlying data while
-        automatically updating proposed award amounts, new
-        salaries, and budget impact. Filters and slicers help
-        leaders quickly focus on the employees relevant to their
-        review.
+        The annotated guide explains current and historical
+        compensation records, editable merit fields, automated
+        award and salary calculations, leader comments, and the
+        input areas used during planning.
       </p>
 
     </figcaption>
@@ -756,7 +802,7 @@ body[data-page="work"] .comp-tools {
       href="/assets/images/compensation/compensation-tool-explainer.png"
       target="_blank"
       rel="noopener"
-      aria-label="Open full-size compensation planning tool explainer"
+      aria-label="Open full-size compensation planning tool guide"
     >
 
       <div class="sample-image-wrap">
@@ -764,7 +810,7 @@ body[data-page="work"] .comp-tools {
         <img
           class="sample-image"
           src="/assets/images/compensation/compensation-tool-explainer.png"
-          alt="Annotated demonstration of the compensation planning tool using fictitious employee data"
+          alt="How to Explore the Compensation Planning Tool guide using fictitious employee and compensation data"
           loading="lazy"
         >
 
@@ -780,51 +826,94 @@ body[data-page="work"] .comp-tools {
   </figure>
 
 
+</section>
 
-  <!-- =====================================================
-       INTERACTIVE DEMO
-       ===================================================== -->
 
-  <section
-    class="demo-card"
-    data-reveal
-  >
 
-    <div>
+<!-- =======================================================
+     LIVE INTERACTIVE EXCEL WORKBOOK
+     ======================================================= -->
 
-      <div class="eyebrow">
-        Interactive demo
+<section
+  class="excel-demo-section"
+  data-reveal
+>
+
+  <div class="excel-demo-heading">
+
+    <div class="eyebrow">
+      Interactive work sample
+    </div>
+
+    <h2>
+      Try the planning tool yourself.
+    </h2>
+
+    <p>
+      Explore the same type of planning experience used by
+      leadership. Use the slicer and filters to navigate the
+      fictitious workforce data, then enter values in the
+      permitted input fields to see how the workbook responds.
+      Your changes are temporary and are not saved.
+    </p>
+
+  </div>
+
+
+
+  <div class="excel-demo-shell">
+
+
+    <div class="excel-demo-topbar">
+
+      <div>
+
+        <strong>
+          Live Compensation Planning Demo
+        </strong>
+
+        <span>
+          Fictitious employees and compensation data only
+        </span>
+
       </div>
 
-      <h3>
-        Explore the workbook yourself.
-      </h3>
 
-      <p>
-        Download the sanitized Excel demo to test proposed
-        increases, use the workbook's filters and slicer, and
-        see how the calculations update individual pay and
-        budget impact. All employee and compensation data in
-        this copy is fictitious.
-      </p>
+      <div class="excel-live-badge">
+        Interactive
+      </div>
 
     </div>
 
 
-    <div class="demo-actions">
 
-      <a
-        class="button button-light"
-        href="/assets/downloads/compensation-planning-demo.xlsx"
-        download
-      >
-        Download Demo Workbook
-      </a>
+    <div class="excel-embed-wrap">
+
+      <iframe
+        class="excel-embed"
+        title="Interactive compensation planning workbook demonstration"
+        frameborder="0"
+        scrolling="no"
+        loading="lazy"
+        src="https://1drv.ms/x/c/cf9e37ba51935e9e/IQR8-nvfY_ihQpCfD6EMz8BZAX5syJ73gwxKdzdtOr9Rs_E?em=2&AllowTyping=True&ActiveCell='Scott%2C%20Michael'!Q6&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True"
+      ></iframe>
 
     </div>
 
-  </section>
 
+
+    <div class="excel-demo-note">
+
+      <strong>Portfolio demonstration:</strong>
+      All employee names, compensation figures, and workforce
+      information in this workbook are fictitious. Visitors may
+      interact with the demonstration, but changes are not saved
+      to the source workbook.
+
+    </div>
+
+
+  </div>
 
 </section>
 
@@ -927,7 +1016,7 @@ body[data-page="work"] .comp-tools {
 
 
 <!-- =======================================================
-     TOOLS & CAPABILITIES
+     TOOLS
      ======================================================= -->
 
 <section class="section-shell tools-section comp-tools">
@@ -939,33 +1028,19 @@ body[data-page="work"] .comp-tools {
 
   <div class="chips">
 
-    <span>
-      Excel
-    </span>
+    <span>Excel</span>
 
-    <span>
-      Compensation Planning
-    </span>
+    <span>Compensation Planning</span>
 
-    <span>
-      HR Analytics
-    </span>
+    <span>HR Analytics</span>
 
-    <span>
-      Decision Support
-    </span>
+    <span>Decision Support</span>
 
-    <span>
-      Data Visualization
-    </span>
+    <span>Data Visualization</span>
 
-    <span>
-      Executive Partnership
-    </span>
+    <span>Executive Partnership</span>
 
-    <span>
-      Data Governance
-    </span>
+    <span>Data Governance</span>
 
   </div>
 
@@ -1009,10 +1084,6 @@ body[data-page="work"] .comp-tools {
 </main>
 
 
-
-<!-- =======================================================
-     FOOTER
-     ======================================================= -->
 
 <footer class="site-footer">
 
