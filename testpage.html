@@ -86,9 +86,7 @@
    ========================================================= */
 
 
-/* COMPACT NAVIGATION
-   Matches the rest of the site
-   ========================================================= */
+/* COMPACT NAVIGATION */
 
 body[data-page="contact"] .nav-shell {
   min-height: 60px;
@@ -138,6 +136,31 @@ body[data-page="contact"] .contact-intro > p {
 
 body[data-page="contact"] .contact-secondary {
   margin-top: 30px;
+}
+
+
+/* =========================================================
+   AREAS OF FOCUS
+   ========================================================= */
+
+body[data-page="contact"] .contact-focus {
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  max-width: 520px;
+}
+
+body[data-page="contact"] .contact-focus-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+body[data-page="contact"] .contact-focus-list div {
+  color: var(--ink);
+  font-size: .92rem;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 
@@ -327,6 +350,34 @@ body[data-page="contact"] .contact-form-heading p {
         </svg>
 
       </a>
+
+    </div>
+
+
+    <!-- AREAS OF FOCUS -->
+
+    <div class="contact-focus">
+
+      <div class="eyebrow">
+        Areas of focus
+      </div>
+
+
+      <div class="contact-focus-list">
+
+        <div>
+          HR Business Partnership &amp; Employee Relations
+        </div>
+
+        <div>
+          HR Operations, HR Technology &amp; Process Improvement
+        </div>
+
+        <div>
+          People Analytics &amp; Executive Reporting
+        </div>
+
+      </div>
 
     </div>
 
